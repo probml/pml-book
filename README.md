@@ -2,7 +2,7 @@
 
 ## Book 0: "Machine Learning: A Probabilistic Perspective" (2012)
 
-See [this link](https://github.com/probml/pml-book/book0.md)
+See [this link](book0.md)
 
 ## Book 1: "Probabilistic Machine Learning: An Introduction" (2021)
 
