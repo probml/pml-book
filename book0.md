@@ -1,4 +1,4 @@
-# Machine Learning: a Probabilistic Perspective
+# Machine Learning: a Probabilistic Perspective (Markdown)
 
 By Kevin Patrick Murphy.
 
