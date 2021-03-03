@@ -1,5 +1,7 @@
 
+<!--
 <img src="https://img.shields.io/github/stars/probml/pml-book">
+-->
 
 ## Book 0: "Machine Learning: A Probabilistic Perspective" (2012)
 
