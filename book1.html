@@ -25,7 +25,7 @@ MIT Press, 2021.
 	  
 	<li> <a href="https://github.com/probml/pyprobml/tree/master/book1/figures/images">All the figures</a> (png files)
 		
-    <li> <a href="https://github.com/probml/pyprobml/tree/master/book1/figures">Code to make all the figures</a> (Python files/ notebooks)
+    <li> <a href="#code">Code to reproduce all the figures and demos</a> (Python files/ notebooks)
       
 	        <li> <a href="https://github.com/probml/pyprobml/tree/master/book1/chapters">Supplementary material</a> 
 			
@@ -59,19 +59,26 @@ If you use this book, please be sure to cite
      style="height:700;">
 
 
-<h2>Notes on the code accompanying the book</h2>
+<h2><a id="code">Code accompanying the book</h2>
 
 When reading the pdf file, you can right click on any link labeled <b>figures.probml.ai/x.y</b> and it will open up Google Colab in
 a new tab, and jump to the cell for chapter x, figure y. Click on the button labeled 'setup' and it will install any necessary code.
 (The first time you do this it may take about 30 seconds, but subsequent setups for other cells on this chapter should be faster.)
-Then click on the cell for the figure and it will run the code to regenerate the figure. You can edit the code inside the colab editor
-that opens up on the right hand side, and make changes (e.g., to the parameters or data), to make sure you understand it.
-There are also some inline links in the book, labeled <b>code.probml.ai/foo</b>,
-which refer to demos that are mentioned in the book but not associated with any figure. Clicking on these links behaves in a similar way.
+Then click on the cell for the figure and it will run the code to regenerate the figure. 
+There are also some inline links to code in the body of the book, labeled <b>code.probml.ai/foo</b>; these refer to 
+demos that are not associated with any figure. Clicking on these links behaves in a similar way.
+	
+The code for each figure is stored in a separate file, either in the <a href="https://github.com/probml/pyprobml/tree/master/scripts">scripts</a> directory,
+or the <a href="https://github.com/probml/pyprobml/tree/master/notebooks">notebooks directory</a>. In the former case, you can click on the 'show source code' 
+button in colab to open the source code inside the colab editor; you can then make changes (e.g., to the parameters or data), to make sure you understand it.
+Note, however, that  changes to local files will not be saved beyond the current colab session. In the latter case, you can click on the 'show notebook' button, 
+and it will open the source notebook in a new tab, which can be edited in the usual way.
 
-In addition to content linked to from inside the book, there are various forms of
+In addition to code linked to from inside the book, there are various forms of
 <a href="https://github.com/probml/pyprobml/tree/master/book1">supplementary material</a>
-associated with each chapter, such as additional notebooks and tutorials.
+associated with each chapter, such as additional jupyter notebooks and tutorials.
+
+
 
   
 <p>
