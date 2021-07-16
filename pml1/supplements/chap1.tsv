@@ -1,5 +1,0 @@
-Title	Language	Type	Link
-Overview of Python ML/DL software ecosystem	Various	Markdown	software.md
-List of Python tutorials Various  Markdown	python_tutorials.md
-Intro to colab Colab	 Notebook colab_intro.ipynb
-Intro to Pandas		 Pandas, Xarray	Notebook	pandas_intro.ipynb

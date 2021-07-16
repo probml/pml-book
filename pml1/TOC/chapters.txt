@@ -1,0 +1,24 @@
+Introduction
+Probability: univariate models
+Probability: multivariate models
+Statistics
+Decision theory
+Information theory
+Linear algebra
+Optimization
+Linear discriminant analysis
+Logistic regression
+Linear regression
+Generalized linear models
+Neural networks for unstructured data
+Neural networks for images
+Neural networks for sequences
+Exemplar-based methods
+Kernel methods
+Trees, forests, bagging and boosting
+Learning with fewer labeled examples
+Dimensionality reduction
+Clustering
+Recommender systems
+Graph embeddings
+

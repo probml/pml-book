@@ -3,3 +3,6 @@ Overview of Python ML/DL software ecosystem,Various,Markdown,software.md
 List of Python tutorials,Various,Markdown,python_tutorials.md
 Intro to colab,Colab,Notebook,colab_intro.ipynb
 Intro to Pandas,"Pandas, Xarray",Notebook,pandas_intro.ipynb
+Intro to JAX,Jax,Notebook,jax_intro.ipynb
+Other JAX tutorials,Jax,Markdown,jax_tutorials.md
+Text preprocessing,PyTorch,Notebook,text_preproc_torch.ipynb
