@@ -1,0 +1,4 @@
+Title,Language,Type,Link
+Image augmentation,PyTorch,d2lbook,image_augmentation_torch.ipynb
+Using a CNN that is pretrained on Imagenet,PyTorch,Notebook,pre_trained_image_classifier_torch.ipynb
+Fine-tuning a pre-trained CNN to make a hotdog detector (D2L 13.2),PyTorch,d2lbook,finetune_cnn_torch.ipynb

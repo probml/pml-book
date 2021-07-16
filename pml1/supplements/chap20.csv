@@ -1,0 +1,8 @@
+Title,Language,Type,Link
+PCA,Sklearn,Notebook,pca.ipynb
+Autoencoder for (Fashion) MNIST,TF2,Notebook,ae_mnist_tf.ipynb
+Autoencoder for (Fashion) MNIST (GDL),TF2,Notebook,ae_mnist_gdl_tf.ipynb
+VAE for CelebA,TF2,Notebook,vae_celeba_tf.ipynb
+VAE for MNIST (GDL),TF2,Notebook,vae_mnist_gdl_tf.ipynb
+Skipgram with negative sampling (D2L 14.3),PyTorch,d2lbook,skipgram_torch.ipynb
+Word analogies with skipgram (D2L 14.7),PyTorch,d2lbook,word_analogies_torch.ipynb
