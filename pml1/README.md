@@ -2,6 +2,7 @@
 [ch1-figures]: https://colab.research.google.com/github/probml/pml-book/blob/master/pml1/figure_notebooks/chapter1_introduction_figures.ipynb
 [ch1-figures-output]: https://colab.research.google.com/github/probml/pml-book/blob/master/pml1/figure_notebooks/chapter1_introduction_figures_with_output.ipynb
 [ch1-other]: https://github.com/probml/pml-book/blob/master/pml1/supplementary_notebooks/chap1.md
+[ch1-supp]: https://github.com/probml/pml-book/blob/master/pml1/supplements/chap1.md
 [ch2-figures]: https://colab.research.google.com/github/probml/pml-book/blob/master/pml1/figure_notebooks/chapter2_probability_univariate_models_figures.ipynb
 [ch2-figures-output]: https://colab.research.google.com/github/probml/pml-book/blob/master/pml1/figure_notebooks/chapter2_probability_univariate_models_figures_with_output.ipynb
 [ch2-other]: https://github.com/probml/pml-book/blob/master/pml1/supplementary_notebooks/chap2.md
@@ -74,6 +75,7 @@
 |Chapter|Name|Figure Colabs|Supplementary Colabs|
 |-|----|----|----|
 |1|Introduction| [Code only][ch1-figures]| [Links][ch1-other]|
+|1|Introduction| [Code only][ch1-figures]| [Links][ch1-supp]|
 |<b>Part I : Foundations</b>|||
 |2|Probability: univariate models| [Code only][ch2-figures]| [Links][ch2-other]|
 |3|Probability: multivariate models| [Code only][ch3-figures]| [Links][ch3-other]|
