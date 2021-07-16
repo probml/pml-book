@@ -1,0 +1,9 @@
+Title,Language,Type,Link
+Optimization using JAX,JAX,Notebook,opt_jax.ipynb
+Optimization using Flax,"JAX,Flax",Notebook,opt_flax.ipynb
+Automatic differentiation with tensorflow,TF2,Notebook,autodiff_tf.ipynb
+Automatic differentiation with JAX,JAX,Notebook,ad_jax.ipynb
+Automatic differentiation with PyTorch,PyTorch,Notebook,autodiff_pytorch.ipynb
+Comparison of different optimizers,PyTorch,External,https://github.com/haven-ai/optimization-toolkit
+
+
