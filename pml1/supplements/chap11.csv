@@ -1,0 +1,5 @@
+Title,Language,Type,Link
+Basics,Sklearn,Notebook,linreg_sklearn.ipynb
+Polynomial regression,PyTorch,Notebook,poly_regression_torch.ipynb
+Bayesian inference,PyMC3,Notebook,linreg_pymc3.ipynb
+Bayesian inference,TFP,Notebook,svi_linear_regression_1d_tfp.ipynb

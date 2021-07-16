@@ -1,0 +1,20 @@
+# Chapter 15 (Neural networks for sequences): Supplementary material
+|Title|Software|Link|
+-|-|-
+|RNN for character level generation (D2L 8.5)|PyTorch|[d2lbook](https://colab.research.google.com/github/probml/probml-notebooks/blob/master/notebooks-d2l/rnn_torch.ipynb)
+|GRUs (D2L 9.1)|PyTorch|[d2lbook](https://colab.research.google.com/github/probml/probml-notebooks/blob/master/notebooks-d2l/gru_torch.ipynb)
+|LSTMs (D2L 9.2)|PyTorch|[d2lbook](https://colab.research.google.com/github/probml/probml-notebooks/blob/master/notebooks-d2l/lstm_torch.ipynb)
+|NMT using RNN (D2L 9.7)|PyTorch|[d2lbook](https://colab.research.google.com/github/probml/probml-notebooks/blob/master/notebooks-d2l/nmt_torch.ipynb)
+|Attention (D2L 10.3)|PyTorch|[d2lbook](https://colab.research.google.com/github/probml/probml-notebooks/blob/master/notebooks-d2l/attention_torch.ipynb)
+|NMT with RNN and attention (D2L 10.4)|PyTorch|[d2lbook](https://colab.research.google.com/github/probml/probml-notebooks/blob/master/notebooks-d2l/nmt_attention_torch.ipynb)
+|NMT using transformers (D2L 10.7)|PyTorch|[d2lbook](https://colab.research.google.com/github/probml/probml-notebooks/blob/master/notebooks-d2l/transformers_torch.ipynb)
+|BERT (D2L 14.8)|PyTorch|[d2lbook](https://colab.research.google.com/github/probml/probml-notebooks/blob/master/notebooks-d2l/bert_torch.ipynb)
+|RNN for sentiment classification (D2L 15.2)|PyTorch|[d2lbook](https://colab.research.google.com/github/probml/probml-notebooks/blob/master/notebooks-d2l/rnn_sentiment_torch.ipynb)
+|1d CNN for sentiment classification (D2L 15.3)|PyTorch|[d2lbook](https://colab.research.google.com/github/probml/probml-notebooks/blob/master/notebooks-d2l/cnn1d_sentiment_torch.ipynb)
+|Entailment classification using MLP with attention (D2L 15.5)|PyTorch|[d2lbook](https://colab.research.google.com/github/probml/probml-notebooks/blob/master/notebooks-d2l/entailment_attention_mlp_torch.ipynb)
+|RNN for sentiment classification|TF2|[External](https://www.tensorflow.org/tutorials/text/text_classification_rnn)
+|RNN for character level generation|TF2|[External](https://www.tensorflow.org/tutorials/text/text_generation)
+|RNN for time series forecasting|TF2|[External](https://www.tensorflow.org/tutorials/structured_data/time_series)
+|RNN for image captioning|TF2|[External](https://www.tensorflow.org/tutorials/text/image_captioning)
+|NMT using RNN with attention|TF2|[External](https://www.tensorflow.org/tutorials/text/nmt_with_attention)
+|NMT using transformers|TF2|[External](https://www.tensorflow.org/tutorials/text/transformer)

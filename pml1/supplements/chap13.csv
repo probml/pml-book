@@ -1,0 +1,11 @@
+Title,Language,Type,Link
+Intro to Flax/Jax,"Jax, Flax",Notebook,flax_intro.ipynb
+Intro to Tensorflow,TF2,External,https://www.tensorflow.org/tutorials
+Intro to PyTorch,PyTorch,External,https://pytorch.org/tutorials/beginner/basics/intro.html
+CIFAR image classification with MLP,PyTorch,Notebook,mlp_cifar_pytorch.ipynb
+MNIST image classification with MLP,TF2,Notebook,mlp_mnist_tf.ipynb
+Dropout for an MLP,PyTorch,Notebook,dropout_mlp_torch.ipynb
+IMDB movie review sentiment classification,TF2,Notebook,mlp_imdb_tf.ipynb
+Hierarchical Bayes for BNNs,PyMC3,Notebook,bnn_hierarchical_pymc3.ipynb
+Hierarchical Bayes for BNNs,NumPyro,Notebook,bnn_hierarchical_numpyro.ipynb
+NYU course on deep learning (2020),PyTorch,External,https://atcold.github.io/pytorch-Deep-Learning

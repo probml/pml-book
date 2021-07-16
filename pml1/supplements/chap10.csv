@@ -1,0 +1,4 @@
+Title,Language,Type,Link
+Logreg using sklearn,Sklearn,Notebook,logreg_sklearn.ipynb
+Logreg from scratch using JAX,JAX,Notebook,logreg_jax.ipynb
+Logreg from scratch using PyTorch,PyTorch,Notebook,logreg_pytorch.ipynb
