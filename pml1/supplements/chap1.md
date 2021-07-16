@@ -1,5 +1,7 @@
+# Chapter 1 (Introduction): Supplementary material
 |Title|Software|Link|
-------------------------------
-|MNIST image classification using a CNN|TF2|[Notebook](https://colab.research.google.com/github/probml/pyprobml/blob/master/notebooks/cnn_mnist_tf.ipynb)
-|Dogs vs cats image classification|TF2|[External](https://www.tensorflow.org/tutorials/images/classification)
-|JAX tutorial|JAX|[Markdown](https://colab.research.google.com/github/probml/pyprobml/blob/master/notebooks/jax_tutorials.md)
+-|-|-
+|Overview of Python ML/DL software ecosystem|Various|[Markdown](https://colab.research.google.com/github/probml/probml-notebooks/tree/main/markdown/software.md)
+|List of Python tutorials|Various|[Markdown](https://colab.research.google.com/github/probml/probml-notebooks/tree/main/markdown/python_tutorials.md)
+|Intro to colab|Colab|[Notebook](https://colab.research.google.com/github/probml/probml-notebooks/tree/main/notebooks/colab_intro.ipynb)
+|Intro to Pandas|Pandas, Xarray|[Notebook](https://colab.research.google.com/github/probml/probml-notebooks/tree/main/notebooks/pandas_intro.ipynb)

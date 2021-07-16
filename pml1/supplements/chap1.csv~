@@ -1,0 +1,4 @@
+Title,Language,Type,Link
+MNIST image classification using a CNN,TF2,Notebook,cnn_mnist_tf.ipynb
+Dogs vs cats image classification,TF2,External,https://www.tensorflow.org/tutorials/images/classification
+JAX tutorial,JAX,Markdown,jax_tutorials.md
