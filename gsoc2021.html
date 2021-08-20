@@ -1,29 +1,164 @@
-<title> Google Summer of Code 2021 - PyProbML version</title>
+<title>Google Summer of Code 2021 - PyProbML version</title>
 
-<h1> Introduction</h1>
 
-This page summarizes the contributions made to the pyprobml repo
-by the awesome members of my
+
+<h1>Google Summer of Code 2021 - PyProbML version</h1>
+
+
+  <p>
+  <img src="figures/cover1.jpg" style="height:200">
+  <img src="figures/cover2.jpg" style="height:200">
+
+  <p>
+  
+This page summarizes the contributions made to the
+<a href="https://github.com/probml/pyprobml">pyprobml repo</a>
+by the awesome members of the
 <a href="https://summerofcode.withgoogle.com/">GSOC</a>
-and <a href="https://www.outreachy.org/">Outreachy</a> students during the summer of 2021.
+and <a href="https://www.outreachy.org/">Outreachy</a> PyProbML
+group during the summer of 2021,
+mentored by
+<a href="https://github.com/murphyk">Kevin Murphy</a>
+and  <a href="https://github.com/mjsML">Mahmoud Soliman</a>.
 
 
-<h1>The students</h1>
 
-<ul>
-  <li> foo
-</ul>    
+<h2>The students</h2>
+
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+
+
+<table>
+  <tr>
+    <th>Name
+    <th>Country of origin
+    <th> Current institution
+    <th> End of summer report
+  </tr>
+  <tr>
+	<td> <a href="https://github.com/karalleyna">Aleyna Kara</a>
+	<td> Turkey
+	<td>  Boğaziçi University, Turkey
+	<td> <a href="https://docs.google.com/document/d/1jUeLFgpWy3C4XzX6b5Eft0tq9-pWlNadQgQSPvINcZk/edit?pli=1#">Google doc</a>
+  <tr>
+	<td> <a href="https://github.com/Drishttii">Drishti Patel</a>
+	<td> India
+	<td> Arizona State University, USA
+	<td> -
+ <tr>
+    <td> <a href="https://github.com/gerdm">Gerardo Duran-Martin</a>
+    <td> Mexico
+    <td> Queen Mary College, London
+    <td> <a href="https://gerdm.github.io/2021/08/16/gsoc2021">Blog </a>
+<tr>
+    <td> <a href="https://github.com/Neoanarika">Ming Liang Ang</>
+	<td> Singapore
+	<td> National University of Singapore
+	<td> <a href="https://neoanarika.github.io/posts/2021/08/gsoc/">Blog</a>
+ <tr>
+   <td> <a href="https://github.com/always-newbie161">Srikar  Reddy</a>
+   <td> India
+   <td> IIT Hyderabad
+   <td> <a href="https://srikarjilugu-gsoc2021.blogspot.com/">Blog</a>
+</table>
+
+<p>
+Below I highlight one artefact per student (although they all contributed
+much, much more than this - see their reports for details).
     
-<h1>Some eye candy</h1>
+<h2>HMMs for changepoint detection</h2>
 
-<!--
-<iframe width="560" height="315"
-	src="https://github.com/probml/probml-data/blob/main/data/ekf_mlp_demo.mp4?raw=true"
-	frameborder="0">
-</iframe>
--->
+<a href="https://colab.research.google.com/github/probml/probml-notebooks/blob/main/notebooks/hmm_poisson_changepoint_jax.ipynb">hmm_poisson_changepoint_jax.ipynb</a>, by Aleyna.
+<p>
 
-<video width="320" height="240" controls>
-  <source type="video/mp4"
-	  src="https://github.com/probml/probml-data/blob/main/data/ekf_mlp_demo.mp4"
-</video>
+  This uses an HMM with $K$ hidden states to segment a scalar time series
+  into different "regimes".
+  The observation (emission) model is Poisson.
+  <br>
+The <a href="https://www.tensorflow.org/probability/examples/Multiple_changepoint_detection_and_Bayesian_model_selection">original notebook</a> for this demo
+was written using the <a href="https://www.tensorflow.org/probability/examples/TensorFlow_Distributions_Tutorial">Tensorflow probability distributions</a> library.
+<br>
+Unfortunately the <a href="https://github.com/tensorflow/probability/blob/main/tensorflow_probability/python/distributions/hidden_markov_model.py#L41-L1316">TFP source code for the HMM class</a>
+is hard to read, so we decided to write a 
+<a href="https://github.com/deepmind/distrax/blob/master/distrax/_src/utils/hmm.py">
+  pure JAX implementation  of HMMs</a>.
+<br>
+This has since been upstreamed into <a href="https://github.com/deepmind/distrax">distrax library</a> from Deepmind (this is a JAX version of part of the TFD library).
+
+<p>
+      <img src="figures/hmm-changepoints.png" style="height:300">
+
+      <h2>Mixtures of (low-rank) Gaussians for CelebA faces</h2>
+
+      <a href="https://colab.research.google.com/github/probml/probml-notebooks/blob/main/notebooks/mix_PPCA_celeba.ipynb">mix_PPCA_celeba.ipynb</a>, by Drishti.
+<p>
+  This colab uses  <a href="https://github.com/eitanrich/torch-mfa">this pytorch code</a> to demonstrate how to fit a mixture of low-rank Gaussians (i.e., probabilistic principal components model) to the CelebA face dataset.
+  <br>
+  After fitting, we can easily generate samples, and perform imputation
+  from occluded images,   as shown below.
+    <p>
+  <img src="figures/mfa-samples.jpeg" style="height:200">
+  <img src="figures/mfa-occluded.jpeg" style="height:200">
+  <img src="figures/mfa-recon.jpeg" style="height:200">
+
+  <p>
+
+
+<h2>EKF for online training of an MLP</h2>
+
+<a href="https://github.com/probml/pyprobml/blob/master/scripts/ekf_mlp_anim_demo.py">
+  ekf_mlp_anim_demo.py</a>
+by Gerardo.
+
+<p>
+We fit a shallow MLP to a sequence of (x,y) pairs which arrive in a streaming fashion.
+<br>
+One epoch of Bayesian training trumps multiple epochs of SGD training!
+  
+</p><video width="500" controls=""> <source src="https://github.com/probml/probml-data/blob/main/data/ekf_mlp_demo.mp4?raw=true" type="video/mp4" /> Your browser does not support HTML video. </video><p>
+
+  <h2>Fast blocked Gibbs sampling for the Potts model using JAX</h2>
+
+  <a href="https://colab.research.google.com/github/probml/probml-notebooks/blob/main/notebooks/gibbs_demo_potts_jax.ipynb">gibbs_demo_potts_jax.ipynb</a>, by Ming.
+      <p>
+      
+	Summary slide below. Note the phase transition at J=1.42, as predicted by theory.
+	<br>
+	This demo took 18 minutes with numpy+numba, but only 6s with JAX+math tricks :).
+<p>
+      <img src="figures/potts-slide.png" style="height:400">
+      
+
+
+      <h2>Imagenette classifier using logistic regression + CLIP preprocessing</h2>
+
+      <a href="https://colab.research.google.com/github/probml/probml-notebooks/blob/main/notebooks/clip_imagenette_demo.ipynb">clip_imagenette_demo.ipynb</a> by Srikar.
+
+<p>
+  <a href="https://www.tensorflow.org/datasets/catalog/imagenette">ImageNette</a>
+  is a small version of Imagenet with just 10 classes,
+  and ~10k training and ~4k test examples.
+  <br>
+  We used a pre-trained
+  <a href="https://github.com/openai/CLIP">CLIP</a> model to perform feature extraction,
+  and then fit a linear logistic regression model,
+  using
+  <a href="https://scikit-learn.org/stable/">sklearn</a>,
+  <a href="https://github.com/google/flax">flax</a>,
+  and <a href="https://pytorchlightning.ai/">pytorch lightning</a>.
+  <br>
+  Since the model has a convex loss,
+  all methods get the same test set accuracy, namely 98.98%.
+  Sample results below,
+  
+  
+<p>
+      <img src="figures/imagenette-logreg-clip.png" style="height:300">
+      
