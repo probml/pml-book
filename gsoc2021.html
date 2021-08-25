@@ -86,11 +86,16 @@ The <a href="https://www.tensorflow.org/probability/examples/Multiple_changepoin
 was written using the <a href="https://www.tensorflow.org/probability/examples/TensorFlow_Distributions_Tutorial">Tensorflow probability distributions</a> library.
 <br>
 Unfortunately the <a href="https://github.com/tensorflow/probability/blob/main/tensorflow_probability/python/distributions/hidden_markov_model.py#L41-L1316">TFP source code for the HMM class</a>
-is hard to read, so we decided to write a 
+is somewhat hard to read (mostly due to the need to handle batches), so we decided to write a 
 <a href="https://github.com/deepmind/distrax/blob/master/distrax/_src/utils/hmm.py">
   pure JAX implementation  of HMMs</a>.
 <br>
-This has since been upstreamed into <a href="https://github.com/deepmind/distrax">distrax library</a> from Deepmind (this is a JAX version of part of the TFD library).
+	This is much simpler, due to JAX primitives such as vmap.
+Our code has since been upstreamed into <a href="https://github.com/deepmind/distrax">distrax library</a>
+	from Deepmind. (Distrax is a JAX version of part of the TFP distributions library).
+	(We also have an even easier-to-read numpy implementation of HMMs
+	<a href="https://github.com/probml/pyprobml/blob/master/scripts/hmm_discrete_lib.py"<here>,
+	which is useful for pedagogical purposes.)
 
 <p>
       <img src="figures/hmm-changepoints.png" style="height:300">
