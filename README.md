@@ -18,11 +18,12 @@ See [this link](https://probml.github.io/pml-book/book1.html)
 
 See [this link](https://probml.github.io/pml-book/book2.html)
 
+<!--
 ## Metrics
 
 <img src="https://img.shields.io/github/stars/probml/pml-book">
 
 
 [![Stargazers over time](https://starchart.cc/probml/pml-book.svg)](https://starchart.cc/probml/pml-book)
-
+-->
 
