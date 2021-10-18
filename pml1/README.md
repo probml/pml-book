@@ -1,5 +1,8 @@
 # "Probabilistic Machine Learning: An Introduction"
 
+[Main github repo](https://github.com/probml/pyprobml)
+
+
 |Chapter|Name|Colab for generating figures|Supplementary material|
 -|-|-|-|
 |1|Introduction|[Link](https://colab.research.google.com/github/probml/pml-book/blob/master/pml1/figure_notebooks/chapter1_introduction_figures.ipynb)|[Link](https://github.com/probml/pml-book/blob/main/pml1/supplements/chap1.md)|
