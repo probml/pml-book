@@ -8,3 +8,4 @@
 |Intro to JAX|Jax|[Notebook](https://colab.research.google.com/github/probml/probml-notebooks/blob/master/notebooks/jax_intro.ipynb)
 |Other JAX tutorials|Jax|[Markdown](https://github.com/probml/probml-notebooks/blob/main/markdown/jax_tutorials.md)
 |Text preprocessing|PyTorch|[Notebook](https://colab.research.google.com/github/probml/probml-notebooks/blob/master/notebooks/text_preproc_torch.ipynb)
+|Intro to ML using Scikit learn|Python|[Online book](https://inria.github.io/scikit-learn-mooc/)
