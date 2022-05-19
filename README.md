@@ -1,6 +1,9 @@
 
 # "Probabilistic machine learning": a book series by Kevin Murphy
 
+
+  <p>&nbsp;</p>
+  
 ## Book 0: "Machine Learning: A Probabilistic Perspective" (2012)
 
 See [this link](https://probml.github.io/pml-book/book0.html)
