@@ -80,7 +80,7 @@ If you use this book, please be sure to cite
 <h2><a id="code">Code accompanying the book</h2>
 
 	Code to recreate all the figures can be found in a series of colabs, one per chapter,
-stored  <a href="https://github.com/probml/pml-book/tree/main/pml1/figure_notebooks">
+stored  <a href="https://github.com/probml/pyprobml/tree/master/notebooks/book1">
   here</a>.
 When reading the pdf version of the book, you can  click on any link labeled <b>figures.probml.ai/x.y</b> and it will open up the  colab for chapter x;
 	the cursor should  scroll down to the cell for figure y. 
@@ -93,20 +93,20 @@ When reading the pdf version of the book, you can  click on any link labeled <b>
 	
 	<p>
 	  The code for most figures is stored in individual files in the 
-	  <a href="https://github.com/probml/pyprobml/tree/master/scripts">scripts</a> directory.
+	  <a href="https://github.com/probml/pyprobml/tree/master/deprecated/scripts">scripts</a> directory.
 	  You can run these locally (on your laptop), but it's often faster to run in colab (especially for demos that use a GPU).
 		To do this, just type `%run foo.py`. You can also edit the file in colab, and then rerun it. 
 Note, however, that  changes to local files will not be saved beyond the current colab session.
 (A better, but more complex, approach is to use VScode to ssh into the colab machine,
-		see <a href="https://github.com/probml/probml-notebooks/blob/main/markdown/colab_gcp_tpu_tutorial.md">this page
+		see <a href="https://github.com/probml/pyprobml/blob/master/notebooks/tutorials/colab_gcp_tpu_tutorial.md">this page
 		</a> for details.)
 		
 	<p>
 There are also some inline links to code in the body of the book, labeled <b>code.probml.ai/foo</b>; these refer to 
 demos that are not associated with any figure. Clicking on these links behaves in a similar way to the figure code (opening a tab for the appropriate
 		colab cell).
-In addition to the above, each chapter has
-<a href="https://github.com/probml/pml-book/tree/main/pml1/supplements">supplementary code / material</a>.
+In addition to the above, many chapters have supplementary code / material (for example, 
+		<a href="https://github.com/probml/pyprobml/tree/master/notebooks/book1/11/supplementary">here</a>).
 		These will continue to be updated even after the book is published (contributions welcome!).
 
 		
